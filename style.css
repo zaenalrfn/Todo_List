@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:  #E8E8E8;
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+.BoxTodo {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+} 
+.BoxTodoIn {
+	width: 500px;
+	height: auto;
+	margin: 0 40px;
+}
+.BoxTodoIn input {
+	padding: 10px;
+	width: 85%;
+	color: black;
+	border: none;
+	margin-top: 30px;
+}
+.BoxTodoIn input:focus {
+	outline: none;
+}
+.BoxTodoIn button[type=submit] {
+	padding: 10px;
+	background-color: #6666FF;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+}
+table {
+	width: 100%;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+}
+table button:nth-child(1) {
+	background-color: #00CC66;
+	padding: 10px 15px;
+	border: none;
+	margin-left: 5px;
+	color: #fff;
+	font-weight: bold;
+}
+table button:nth-child(2) {
+	background-color: #CC0000;
+	padding: 10px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+}
+tbody td:nth-child(1) {
+	border-collapse: collapse;
+	background-color: #fff;
+	color: black;
+	padding-left: 20px;
+	padding: 10px;
+
+}
+.PopUpEdit {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0,0.4);
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.editSub {
+	width: 400px;
+	height: 100px;
+	margin-top: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 20px 20px;
+	animation: animaAlert .6s forwards;
+}
+@keyframes animaAlert {
+	0% {
+		margin-top: 10px;
+	}
+	50% {
+		margin-top: 20px;
+	}
+}
+.alert h3 {
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 500;
+}
+.btnEdit {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 0;
+}
+.btnEdit button {
+	padding: 13px;
+	border: none;
+	border-radius: 3px;
+	background-color: #6666FF;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+
+}
+
+
+@media screen and (max-width: 576px) {
+	.BoxTodoout {
+		display: block;
+		width: 100%;
+		margin-left: -10px;
+
+	}
+	.BoxTodoIn input {
+		width: 100%;
+	}
+	.BoxTodoIn button[type=submit] {
+		margin: 20px auto;
+		width: 100%;
+	}
+	.editSub {
+		margin: 10px 20px;
+	}
+}

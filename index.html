@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"/>
+	<title>Todo List Saya</title>
+</head>
+<body>
+	<h1>Todo List Saya</h1>
+	<div class="BoxTodo">
+		<div class="BoxTodoIn">
+			<div class="BoxTodoout">
+				<input type="text" name="text" placeholder="Masukkan Todo List">
+				<button type="submit" onclick="Add()">Add</button>
+			</div>
+			<table>
+				<tbody id="body"></tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="PopUpEdit">
+		<div class="editSub">
+			
+			<div class="alert">
+				<h3>Masukkan Todo List Anda</h3>
+			</div>
+			<div class="btnEdit">
+				<button onclick="oke()" type="submit" >Oke</button>
+			</div>
+		</div>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
